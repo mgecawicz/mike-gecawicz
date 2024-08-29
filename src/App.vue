@@ -33,8 +33,9 @@ export default {
 }
 html,
 body {
-  height: 100%;
+  height: auto;
   margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll if needed */
 }
 #app {
   font-family: MonoFaceRegular;
@@ -80,7 +81,7 @@ nav a.router-link-exact-active {
 }
 
 .bg-contact {
-  background-color: #023047; /* Example color for Contact page */
+  background-color: #ffb703; /* Example color for Contact page */
 }
 
 .bg-projects {

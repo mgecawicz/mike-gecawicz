@@ -1,0 +1,89 @@
+{
+  "lorem" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, justo sed posuere aliquam, tortor urna rutrum eros, at lobortis eros eros sed neque. Mauris vitae metus aliquam, semper massa eget, ullamcorper lacus. Mauris at sapien lacus. Vivamus eu vestibulum justo. Morbi tempus magna quis metus volutpat feugiat. Phasellus at semper neque. Donec quis tellus vehicula, pellentesque sapien id, dapibus dui.  Suspendisse dignissim vitae lorem in volutpat. Donec sit amet posuere metus. Vestibulum euismod nisi nisl, vel dignissim erat aliquet suscipit. Morbi a enim odio. Sed volutpat id metus a facilisis. Suspendisse nunc orci, ultricies eget rhoncus sed, maximus suscipit eros. Cras dictum, leo et porta dignissim, enim ligula vestibulum velit, sed luctus ipsum augue a eros. Duis malesuada ante eu lectus porta cursus.  Morbi convallis lacinia augue eu venenatis. Sed pellentesque aliquet rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum sapien ligula. Integer at diam augue. Ut rhoncus ipsum at tortor porttitor mollis. Quisque posuere velit in quam fringilla, eget mattis sapien posuere. Maecenas mauris purus, scelerisque et arcu a, dapibus porttitor est. Nam eget urna convallis, commodo nulla eu, dignissim purus. Integer rutrum purus a blandit suscipit. Suspendisse facilisis cursus magna eu molestie. Morbi condimentum dictum lectus nec finibus. Donec tincidunt nunc quis mauris molestie, eget porta urna tempor. Vivamus dignissim quam mauris, id mattis augue dictum vel.  Nam sed metus et ex laoreet congue ac ac enim. Integer fermentum sagittis laoreet. Maecenas ac mauris neque. Nam congue lacus et justo bibendum, at pharetra nisi fringilla. Etiam pellentesque lectus eu dictum semper. Pellentesque tincidunt ex at nisl congue ornare. In hac habitasse platea dictumst. Vestibulum eu hendrerit ante. Donec egestas augue sit amet mi condimentum luctus. Etiam elementum odio id dui imperdiet auctor.  Mauris consectetur turpis vitae nisl mattis dictum. Donec pulvinar mauris et dapibus imperdiet. Cras ac sapien tincidunt, egestas neque cursus, porttitor sapien. Proin bibendum egestas ex a finibus. Fusce eleifend euismod pulvinar. Nam convallis magna at vulputate placerat. Nam quam ligula, pellentesque a accumsan et, fermentum at enim.  Donec tempus imperdiet ante quis euismod. Nunc posuere risus in rhoncus aliquet. Vivamus felis lacus, accumsan eget ex non, bibendum mollis dui. Sed sed tellus ipsum. Etiam tincidunt tincidunt blandit. Vivamus ullamcorper tempor erat ut tristique. Nullam tincidunt sollicitudin laoreet. Curabitur porta quis lorem at dapibus.  Aliquam luctus purus mi, nec mattis nunc tempus quis. Ut quis metus luctus, rhoncus justo maximus, vulputate dui. Aliquam dolor nisi, fringilla at risus vitae, finibus feugiat ex. Sed ac enim ut nulla tempus luctus vitae nec mauris. Nulla elementum velit sed posuere facilisis. Quisque faucibus gravida justo, nec interdum ipsum porttitor sed. Aliquam ut eros eu risus euismod maximus non at purus.  Sed sed gravida urna. Aenean elit felis, faucibus sollicitudin maximus ut, blandit nec lacus. Sed eu ullamcorper nisl. Quisque tincidunt ante neque, vitae consectetur odio tincidunt eget. Mauris ut ullamcorper purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ac gravida purus, in convallis elit. Morbi dignissim lorem lectus, at pretium est semper sagittis. Suspendisse sed fringilla orci, quis fermentum quam. Phasellus risus magna, interdum id est sit amet, tincidunt volutpat neque. Donec et fermentum elit, in tempor sem. Maecenas feugiat diam eleifend tellus hendrerit, et condimentum augue efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl risus, rhoncus id nisi eget, mollis iaculis tellus. Nullam fringilla diam in interdum gravida.  Proin semper quis urna quis rutrum. Suspendisse nec turpis ex. Vestibulum quis leo sapien. Sed et urna id ante semper pellentesque eget quis nisl. Integer non tortor porttitor, sollicitudin risus nec, eleifend risus. Proin sit amet dui eget magna porta egestas venenatis in ante. Aliquam a pretium metus, eget ultrices ligula.  Cras ac tellus ut diam fringilla viverra. Suspendisse faucibus risus ante, id rutrum dui feugiat tincidunt. Nullam aliquet id augue eu placerat. Praesent fermentum dui sit amet tellus hendrerit facilisis. Quisque sollicitudin dolor a nibh vehicula, a aliquet mauris finibus. Mauris et diam et libero ornare varius. Praesent accumsan ut lorem eget dictum. Ut lectus dolor, fringilla nec nunc convallis, dignissim viverra justo. Fusce molestie eros quis faucibus interdum. Cras tempor arcu eget turpis laoreet, nec egestas dolor semper. Phasellus commodo ornare magna, sed ornare lacus lobortis vel. Morbi tempor porta arcu, et dignissim nisi feugiat ac. Ut lorem lacus, pellentesque et ante a, cursus facilisis nulla. Suspendisse eget suscipit justo. Donec turpis mi, convallis eget est in, sodales elementum metus. ",
+  "name": "Michael Gecawicz",
+  "location": "Jersey City, NJ",
+  "email": "mi.ke.ge.cz@gmail.com",
+  "education": [
+    {
+      "school": "University of Maine - Orono ME",
+      "studies": "New Media and Computer Science",
+      "honors": "Magna cum Laude",
+      "years": "September 2017 - May 2021",
+      "description": "Through my studies at the University of Maine, I have created numerous projects in the fields of Video Production, Physical Computing, Mobile Application Development, and more. "
+    },
+    {
+      "school": "ELISAVA Univeristy - Barcelona, Spain",
+      "studies": "Advanced Principles of Design",
+      "honors": "",
+      "years": "January 2020 - March 2020",
+      "description": "During my study abroad semester in Barcelona, I attended courses in Advanced Principles of Design, Packaging Design and participated in group projects with students from around the world."
+    }
+  ],
+  "experience": [
+    {
+      "company": "INVIDI Technologies",
+      "location": "Princeton, NJ",
+      "position": "Software Developer",
+      "duration": "August 2021 - Present",
+      "description": "Developed / Managed multiple backend and frontend services for the puspose of targeted advertising for live and streamed TV.",
+      "publications": []
+    },
+    {
+      "company": "Bridge Networking LLC",
+      "location": "San Diego, CA",
+      "position": "CTO / Cofounder",
+      "duration": "May 2020 - August 2021",
+      "description": "Developed an iOS application for managing social media accounts. Managed a web / native app development team.",
+      "publications": [
+        {
+          "name": "Bridge Network",
+          "description": "iOS Application",
+          "details": "React Native based socail media application"
+        }
+      ]
+    },
+    {
+      "company": "MIM Laboratories",
+      "location": "Orono, ME",
+      "position": "Product Designer / Electrical Engineer",
+      "duration": "June 2019 - May 2021",
+      "description": "Created protypes for research-based production of sensory-technology. Designed and programmed application specific micro controllers. 3D CAD Design and SLA 3D Printing Management",
+      "publications": [
+        {
+          "name": "Methods and Systems for Augmenting and/or Stimulating Flavor - Co-Creator",
+          "description": "A Device for Simulating the Flavors of Food and Drink",
+          "details": "US Provisional Patent Application No.: 63/056,202"
+        },
+        {
+          "name": "Influence of Electric Taste, Smell, Color, and Thermal Sensory Modalities on the Liking and Mediated Emotions of Virtual Flavor Perceptio - Co-Author",
+          "description": "Academic Journal Entry",
+          "details": "Published – ICMI '20: Proceedings of the 2020 International Conference on Multimodal Interaction – Pages 296-304"
+        }
+      ]
+    },
+    {
+      "company": "ASAP Media Services",
+      "location": "Orono, ME",
+      "position": "Project Manager / UX Designer / Software Developer",
+      "duration": "February 2018 - March 2019",
+      "description": "Led multiple projects, both research and client based. Developed mobile applications, VR technology, physical computing, video production, and climate simulation.",
+      "publications": [
+        {
+          "name": "Friend Finder",
+          "description": "Mobile Application / Wearable Technolody",
+          "details": "A project aimed to be a physical social media, to connect people face to face. Designed for very large scale and flexible situations."
+        },
+        {
+          "name": "iSWOOP",
+          "description": "Climate Change Modeling",
+          "details": "Phase II of the National Science Foundation (Advancing Informal STEM Learning of the Division of Research on Learning) funded project iSWOOP"
+        },
+        {
+          "name": "Here4Quee",
+          "description": "iOS Application",
+          "details": "iOS app aimed to help members of the LGBTQ+ community connect with each other to talk through difficult situations"
+        }
+      ]
+    }
+  ]
+}

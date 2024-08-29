@@ -10,7 +10,21 @@
     <h2>Software Developer & Digital Content Designer</h2>
     <h3>Based in Jersey City, NJ</h3>
   </div>
+  <div
+    class="intro"
+    v-motion
+    :initial="{ opacity: 0, y: 30 }"
+    :enter="{ opacity: 1, y: 0, scale: 1 }"
+    :duration="700"
+  >
+    <h2 class="dummy">{{ item }}</h2>
+  </div>
 </template>
+
+<script lang="ts" setup>
+import lorem from "../data/text.json";
+const item = lorem.lorem as string;
+</script>
 
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -23,6 +37,10 @@ export default defineComponent({
 template {
   background-color: #ffb703;
 }
+.intro {
+  display: flex;
+  justify-content: center;
+}
 .name {
   line-height: 0.8;
 }
@@ -34,6 +52,12 @@ template {
 h2 {
   text-align: left;
   font-size: 2vw;
+}
+.dummy {
+  text-align: justify;
+  font-size: 18px;
+  color: white;
+  max-width: 80vw;
 }
 h3 {
   color: #888;
