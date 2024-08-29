@@ -24,7 +24,12 @@ export default {
 <style>
 @font-face {
   font-family: "MonoFaceRegular";
-  src: url(~@/assets/DepartureMono-1.346/DepartureMono-Regular.otf);
+  src: url("@/assets/DepartureMono-1.346/DepartureMono-Regular.woff2")
+      format("woff2"),
+    url("@/assets/DepartureMono-1.346/DepartureMono-Regular.woff")
+      format("woff"),
+    url("@/assets/DepartureMono-1.346/DepartureMono-Regular.otf")
+      format("opentype");
 }
 html,
 body {
