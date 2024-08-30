@@ -3,7 +3,12 @@
     <h1 v-motion-slide-visible-once-right>About</h1>
   </div>
   <div class="container">
-    <div>
+    <div
+      v-motion
+      :initial="{ opacity: 0, y: -30 }"
+      :enter="{ opacity: 1, y: 0, scale: 1 }"
+      :duration="700"
+    >
       <img v-bind:src="require('../images/me.jpg')" class="myImage" />
     </div>
     <div
@@ -83,6 +88,7 @@ export default defineComponent({
     margin-left: 5vw;
     margin-bottom: 5vw;
     max-width: 30vw;
+    border-radius: 80px;
   }
   .intro {
     display: flex;

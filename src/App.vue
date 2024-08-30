@@ -38,7 +38,7 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll if needed */
 }
 #app {
-  font-family: MonoFaceRegular;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

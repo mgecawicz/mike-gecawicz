@@ -1,12 +1,18 @@
 <template>
   <div class="title">
-    <h1 v-motion-slide-visible-once-right>Resume</h1>
+    <h1 v-motion-slide-visible-once-right>Résumé</h1>
     <div class="contact" v-motion-slide-visible-once-left>
       <h2 class="myName">{{ resume.name }}</h2>
       <h3 style="color: #444">{{ resume.location }}</h3>
       <h3 style="color: #444">{{ resume.email }}</h3>
     </div>
-    <div style="background-color: #219ebc; padding-top: 0.2vw">
+    <div
+      style="background-color: #219ebc; padding-top: 0.2vw"
+      v-motion
+      :initial="{ opacity: 0, x: -30, y: 0 }"
+      :enter="{ opacity: 1, x: 0, y: 0, scale: 1 }"
+      :duration="700"
+    >
       <h2 class="myExperience">Experience</h2>
       <div
         v-for="item in resume.experience"
@@ -38,7 +44,12 @@
         <br />
       </div>
     </div>
-    <div>
+    <div
+      v-motion
+      :initial="{ opacity: 0, x: -30, y: 0 }"
+      :enter="{ opacity: 1, x: 0, y: 0, scale: 1 }"
+      :duration="1000"
+    >
       <h2 style="margin-top: 5vw; font-weight: 1000; font-size: 2vw">
         Education
       </h2>
