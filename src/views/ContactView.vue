@@ -1,5 +1,5 @@
 <template>
-  <BouncingBall />
+  <BoidsSim />
   <div class="title">
     <h1 v-motion-slide-visible-once-left>Contact</h1>
   </div>
@@ -9,7 +9,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import BouncingBall from "../components/BouncingBall.vue";
+import BoidsSim from "../components/Boids.vue";
 </script>
 
 <script lang="ts">
