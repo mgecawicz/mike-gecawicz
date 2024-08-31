@@ -18,7 +18,7 @@
   <h2 v-motion-slide-visible-once-right class="dummy">
     Here's the code for this page...
   </h2>
-  <div class="code-container">
+  <div v-motion-slide-visible-once-right class="code-container">
     <highlightjs class="code-block" language="javascript" :code="code" />
   </div>
 </template>
