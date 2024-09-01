@@ -1,11 +1,13 @@
 <template>
   <BouncingBall />
-  <div class="title">
-    <h1 v-motion-slide-visible-once-left>Projects</h1>
-  </div>
-  <div style="height: 60vh; margin-top: 20vh">
-    <h2 v-motion-slide-right>This will eventually be the projects page.</h2>
-    <h2 v-motion-slide-left>Stay Tuned!</h2>
+  <div style="min-height: 100vh">
+    <div class="title">
+      <h1 v-motion-slide-visible-once-left>Projects</h1>
+    </div>
+    <div style="margin-top: 20vh">
+      <h2 v-motion-slide-right>This will eventually be the projects page.</h2>
+      <h2 v-motion-slide-left>Stay Tuned!</h2>
+    </div>
   </div>
 </template>
 <script setup lang="ts">

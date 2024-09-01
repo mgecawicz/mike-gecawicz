@@ -1,0 +1,53 @@
+{
+  "accounts": [
+    {
+      "title": "LinkedIn",
+      "textColor": "#FFFFFF",
+      "color": "#0077B5",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
+      "link": "https://www.linkedin.com/in/michael-gecawicz-39a14490"
+    },
+    {
+      "title": "Instagram",
+      "textColor": "#FFFFFF",
+      "color": "#F56040",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png",
+      "link": "https://www.instagram.com/mgswich/"
+    },
+    {
+      "title": "TikTok",
+      "textColor": "#FFFFFF",
+      "color": "#000000",
+      "icon": "https://preview.redd.it/help-creating-a-tiktok-logo-effect-v0-pugdk8t5i3sc1.png?width=512&format=png&auto=webp&s=3479645c6ee79963293af9165c5668ddd4c3b268",
+      "link": "https://www.tiktok.com/@the_mgec"
+    },
+    {
+      "title": "GitHub",
+      "textColor": "#FFFFFF",
+      "color": "#6e5494",
+      "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+      "link": "https://github.com/mgecawicz"
+    },
+    {
+      "title": "Reddit",
+      "textColor": "#000000",
+      "color": "#fb8500",
+      "icon": "https://www.iconpacks.net/icons/2/free-reddit-logo-icon-2436-thumb.png",
+      "link": "https://www.reddit.com/user/mikegecawicz/"
+    },
+    {
+      "title": "YouTube",
+      "textColor": "#000000",
+      "color": "#ffffff",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png",
+      "link": "https://www.youtube.com/c/MikeGecawicz"
+    },
+    {
+      "title": "Email",
+      "textColor": "#FFFFFF",
+      "color": "#003049",
+      "icon": "https://static-00.iconduck.com/assets.00/email-icon-2048x2048-iejnvv9u.png",
+      "link": "mailto:mi.ke.ge.cz@gmail.com?subject=Hi%20Mike!%20Im%20contacting%20you%20from%20your%20website."
+    }
+  ]
+}

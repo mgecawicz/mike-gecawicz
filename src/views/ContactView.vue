@@ -1,15 +1,34 @@
 <template>
   <BoidsSim />
-  <div class="title">
-    <h1 v-motion-slide-visible-once-left>Contact</h1>
-  </div>
-  <div style="height: 60vh; margin-top: 20vh">
-    <h2 v-motion-slide-right>This will eventually be the contact page.</h2>
-    <h2 v-motion-slide-left>Stay Tuned!</h2>
+  <div class="body">
+    <div class="title">
+      <h1 v-motion-slide-visible-once-left>Contact</h1>
+    </div>
+    <div style="line-height: 0.3">
+      <h2 v-motion-slide-visible-once-right class="dummy">
+        Feel free to contact me on any of my social media platforms!
+      </h2>
+    </div>
+    <div
+      style="margin-top: 2vw"
+      v-for="account in sm.accounts"
+      v-bind:key="account"
+    >
+      <SocialMediaButton
+        :title="account.title"
+        :color="account.color"
+        :icon="account.icon"
+        :link="account.link"
+        :textColor="account.textColor"
+      />
+    </div>
+    <div style="height: 5vh" />
   </div>
 </template>
 <script setup lang="ts">
 import BoidsSim from "../components/Boids.vue";
+import sm from "../data/sm.json";
+import SocialMediaButton from "@/components/SocialMediaButton.vue";
 </script>
 
 <script lang="ts">
@@ -20,6 +39,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.body {
+  min-height: 100vh;
+}
 template {
   background-color: #ffb703;
 }
@@ -40,8 +62,9 @@ template {
   border-radius: 20vw;
 }
 h2 {
-  text-align: center;
-  font-size: 18px;
+  text-align: left;
+  font-size: 12;
+  margin-left: 5%;
 }
 h3 {
   color: #888;
