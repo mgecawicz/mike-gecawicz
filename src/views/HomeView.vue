@@ -10,21 +10,37 @@
     <h2>Software Developer & Digital Content Designer</h2>
     <h3>Based in Jersey City, NJ</h3>
   </div>
-  <div style="line-height: 0.3">
-    <h2 v-motion-slide-visible-once-right class="dummy">
-      This website was developed using Vue.js
-    </h2>
-  </div>
-  <h2 v-motion-slide-visible-once-right class="dummy">
-    Here's the code for this page...
-  </h2>
-  <div v-motion-slide-visible-once-right class="code-container">
-    <highlightjs class="code-block" language="javascript" :code="code" />
+  <div class="mainContent">
+    <div class="column1">
+      <div
+        v-for="entry in blog.entries"
+        v-bind:key="entry"
+        v-motion-slide-visible-once-left
+      >
+        <p class="blogDate">{{ entry.date }}</p>
+        <p class="blogContent">{{ entry.content }}</p>
+        <hr />
+      </div>
+    </div>
+    <div class="column2">
+      <div style="line-height: 0.3">
+        <h2 v-motion-slide-visible-once-right class="dummy">
+          This website was developed using Vue.js
+        </h2>
+      </div>
+      <h2 v-motion-slide-visible-once-right class="dummy">
+        Here's the code for this page...
+      </h2>
+      <div v-motion-slide-visible-once-right class="code-container">
+        <highlightjs class="code-block" language="javascript" :code="code" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import "./style/home.css";
+import blog from "../data/blog.json";
 import code from "raw-loader!../data/homevue.txt";
 </script>
 

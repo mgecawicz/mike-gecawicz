@@ -33,7 +33,7 @@ export default {
 }
 html,
 body {
-  height: auto;
+  min-height: 100vh;
   margin: 0;
   overflow-x: hidden; /* Prevent horizontal scroll if needed */
 }
