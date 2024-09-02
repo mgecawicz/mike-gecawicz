@@ -7,6 +7,12 @@
       <h2 v-motion-slide-right>This will eventually be the projects page.</h2>
       <h2 v-motion-slide-left>Stay Tuned!</h2>
     </div>
+    <video-player
+      src="../videos/DragonFinal2.mp4"
+      controls
+      :loop="true"
+      :volume="0.6"
+    />
   </div>
 </template>
 <script setup lang="ts">
