@@ -46,10 +46,6 @@ li {
 a {
   color: #42b983;
 }
-h2 {
-  color: white;
-  text-align: center;
-}
 a {
   width: 50vw;
   text-align: center;
@@ -85,12 +81,21 @@ a:active {
     display: flex;
     flex-direction: columns;
   }
+  h2 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   /* desktop */
   .a {
     display: flex;
     flex-direction: columns;
+  }
+  h2 {
+    color: white;
+    text-align: center;
   }
 }
 </style>

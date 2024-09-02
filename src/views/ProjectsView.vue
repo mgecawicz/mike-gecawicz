@@ -1,5 +1,4 @@
 <template>
-  <BouncingBall />
   <div style="min-height: 100vh">
     <div class="title">
       <h1 v-motion-slide-visible-once-left>Projects</h1>

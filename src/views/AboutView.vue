@@ -21,7 +21,7 @@
       <h2>
         I am a seasoned web developer with extensive experience in both
         front-end and back-end technologies, adept at using a range of
-        programming languagessuch as JavaScript, Python, and PHP to build robust
+        programming language such as TypeScript, Python, and PHP to build robust
         and dynamic web applications.
         <br /><br />
         My expertise extends beyond coding to encompass a deep understanding of

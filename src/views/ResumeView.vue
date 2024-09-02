@@ -7,13 +7,14 @@
       <h3 style="color: #444">{{ resume.email }}</h3>
     </div>
     <div
-      style="background-color: #219ebc; padding-top: 0.2vw"
-      v-motion
-      :initial="{ opacity: 0, x: -30, y: 0 }"
-      :enter="{ opacity: 1, x: 0, y: 0, scale: 1 }"
-      :duration="700"
+      style="background-color: #219ebc; padding-top: 0.2vw; padding-bottom: 2vw"
     >
-      <h2 class="myExperience">Experience</h2>
+      <SummaryOfSkills />
+    </div>
+    <div v-motion-slide-visible-once-left>
+      <h2 style="margin-top: 5vw; font-weight: 1000; font-size: 35px">
+        Experience
+      </h2>
       <div
         v-for="item in resume.experience"
         v-bind:key="item.company"
@@ -45,12 +46,10 @@
       </div>
     </div>
     <div
-      v-motion
-      :initial="{ opacity: 0, x: -30, y: 0 }"
-      :enter="{ opacity: 1, x: 0, y: 0, scale: 1 }"
-      :duration="1000"
+      v-motion-slide-visible-once-left
+      style="background-color: #219ebc; padding-top: 0.5vw"
     >
-      <h2 style="margin-top: 5vw; font-weight: 1000; font-size: 2vw">
+      <h2 style="margin-top: 1vw; font-weight: 1000; font-size: 35px">
         Education
       </h2>
       <div
@@ -72,6 +71,7 @@
 
 <script lang="ts" setup>
 import res from "../data/text.json";
+import SummaryOfSkills from "@/components/SummaryOfSkills.vue";
 const resume = res;
 </script>
 

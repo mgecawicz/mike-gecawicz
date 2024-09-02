@@ -1,5 +1,5 @@
 <template>
-  <BoidsSim />
+  <!-- <BoidsSim /> -->
   <div class="body">
     <div class="title">
       <h1 v-motion-slide-visible-once-left>Contact</h1>
@@ -26,7 +26,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import BoidsSim from "../components/Boids.vue";
 import sm from "../data/sm.json";
 import SocialMediaButton from "@/components/SocialMediaButton.vue";
 </script>
@@ -62,7 +61,7 @@ template {
   border-radius: 20vw;
 }
 h2 {
-  text-align: left;
+  text-align: right;
   font-size: 12;
   margin-left: 5%;
 }

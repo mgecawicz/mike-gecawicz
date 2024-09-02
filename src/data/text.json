@@ -19,6 +19,84 @@
       "description": "During my study abroad semester in Barcelona, I attended courses in Advanced Principles of Design, Packaging Design and participated in group projects with students from around the world."
     }
   ],
+  "summaryOfSkills":[
+    {
+      "title": "AWS Services",
+      "items": [
+        "s3",
+        "ec2",
+        "cloudFormation",
+        "lambda",
+        "ecs",
+        "cloudFront",
+        "APIGateway",
+        "amplify",
+        "dynamoDB",
+        "rds"
+      ]
+    },
+    {
+      "title": "Programming Languages",
+      "items": [
+        "Java",
+        "C++",
+        "Python",
+        "Kotlin",
+        "go"
+      ]
+    },
+    {
+      "title": "Scripting Languages",
+      "items": [
+        "HTML&CSS",
+        "JavaScript & TypeScript",
+        "Vue.js",
+        "React.js",
+        "bash",
+        "ReactNative"
+      ]
+    },
+    {
+      "title": "Adobe Products",
+      "items": [
+        "Illustrator",
+        "Photoshop",
+        "After Effects",
+        "Premiere",
+        "InDesign",
+        "Audition"
+      ]
+    },
+    {
+      "title": "3D Design",
+      "items": [
+        "Autodesk Fusion 360",
+        "SOLIDWORKS",
+        "PTC Creo Parametric",
+        "Blender"
+      ]
+    }
+  ],
+  "spokenLanguages" : {
+    "items": [
+      {
+        "lang": "English",
+        "flu": "Fluent"
+      },
+      {
+        "lang": "Spanish",
+        "flu": "Proficient"
+      },
+      {
+        "lang": "Mandarin Chinese",
+        "flu": "Novice"
+      },
+      {
+        "lang": "Hindi",
+        "flu": "Beginner"
+      }
+    ]
+  },
   "experience": [
     {
       "company": "INVIDI Technologies",
@@ -38,7 +116,21 @@
         {
           "name": "Bridge Network",
           "description": "iOS Application",
-          "details": "React Native based socail media application"
+          "details": "React Native based social media application"
+        }
+      ]
+    },
+    {
+      "company": "Trident Communication Technology",
+      "location": "Acton, MA",
+      "position": "Mechanical Designer",
+      "duration": "June 2013 - Present",
+      "description": "Designed the prototype concepts for a range of audio products like headsets and communication badges.",
+      "publications": [
+        {
+          "name": "Trident Logo",
+          "description": "Trademark",
+          "details": "US Trademark Serial Number: 86492399"
         }
       ]
     },
