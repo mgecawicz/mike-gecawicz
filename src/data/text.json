@@ -23,23 +23,23 @@
     {
       "title": "AWS Services",
       "items": [
-        "s3",
-        "ec2",
-        "cloudFormation",
+        "S3",
+        "EC2",
+        "CloudFormation",
         "lambda",
-        "ecs",
-        "cloudFront",
+        "ECS",
+        "CloudFront",
         "APIGateway",
-        "amplify",
-        "dynamoDB",
-        "rds"
+        "Amplify",
+        "DynamoDB",
+        "RDS"
       ]
     },
     {
       "title": "Programming Languages",
       "items": [
         "Java",
-        "C++",
+        "C/C++",
         "Python",
         "Kotlin",
         "go"

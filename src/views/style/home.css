@@ -80,7 +80,7 @@ h3 {
     display: flex;
     justify-content: space-around;
   }
-  .column1{
+  .column1 {
     width: 50vw;
     padding-top: 4vw;
   }
@@ -88,7 +88,8 @@ h3 {
     width: 40vw;
   }
   .code-block {
-    width: 50vw;
+    width: 40vw;
+    padding-left: 20px !important;
     background: "red";
     text-align: left;
   }

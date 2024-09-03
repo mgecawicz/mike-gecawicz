@@ -4,11 +4,6 @@
     <div class="title">
       <h1 v-motion-slide-visible-once-left>Contact</h1>
     </div>
-    <div style="line-height: 0.3">
-      <h2 v-motion-slide-visible-once-right class="dummy">
-        Feel free to contact me on any of my social media platforms!
-      </h2>
-    </div>
     <div
       style="margin-top: 2vw"
       v-for="account in sm.accounts"

@@ -1,37 +1,45 @@
 <template>
-  <div class="name">
-    <h1 v-motion-slide-visible-once-left>
-      <span>Mike</span>
-      <br />
-      <span>Gecawicz</span>
-    </h1>
-  </div>
-  <div class="tagLine" v-motion-slide-visible-once-bottom>
-    <h2>Software Developer & Digital Content Designer</h2>
-    <h3>Based in Jersey City, NJ</h3>
-  </div>
-  <div style="line-height: 0.3">
-    <h2 v-motion-slide-visible-once-right class="dummy">
-      This website was developed using Vue.js
-    </h2>
-  </div>
-  <h2 v-motion-slide-visible-once-right class="dummy">
-    Here's the code for this page...
-  </h2>
-  <div class="code-container">
-    <highlightjs class="code-block" language="javascript" :code="code" />
+  <div id="app" :class="backgroundClass" :style="{ fontFamily: currentFont }">
+    <nav v-motion-slide-visible-once-right>
+      <router-link to="/">~/Home/</router-link>
+      <router-link to="/about">About/</router-link>
+      <router-link to="/projects">Projects/</router-link>
+      <router-link to="/resume">Resume/</router-link>
+      <router-link to="/contact">Contact</router-link>
+    </nav>
+    <router-view />
+    <footer>
+      <Footer
+        :fonts="fonts"
+        :current-font="currentFont"
+        @updated-font="changeFont"
+      />
+    </footer>
   </div>
 </template>
 
-<script lang="ts" setup>
-import "./style/home.css";
-import code from "raw-loader!../data/homevue.txt";
+<script setup lang="ts">
+import { ref } from "vue";
+import "./app.css";
+import Footer from "@/components/Footer.vue";
+const currentFont = ref("SometypeMono");
+const fonts = [
+  "SometypeMono",
+  "MonoFaceRegular",
+  "Pixelify_Sans",
+  "Libre_Barcode_39",
+];
+const changeFont = (payload: string) => {
+  currentFont.value = payload;
+};
 </script>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "HomeView",
-});
+export default {
+  computed: {
+    backgroundClass() {
+      return this.$route.meta.backgroundColor || "";
+    },
+  },
+};
 </script>

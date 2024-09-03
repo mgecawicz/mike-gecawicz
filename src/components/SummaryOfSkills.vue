@@ -10,7 +10,7 @@
       <div
         class="subject-object"
         v-for="subject in resume.summaryOfSkills"
-        v-bind:key="subject"
+        v-bind:key="subject.title"
       >
         <h3>{{ subject.title }}</h3>
         <div class="item" v-for="item in subject.items" v-bind:key="item">

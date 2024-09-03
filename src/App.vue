@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="backgroundClass">
+  <div id="app" :class="backgroundClass" :style="{ fontFamily: currentFont }">
     <nav v-motion-slide-visible-once-right>
       <router-link to="/">~/Home/</router-link>
       <router-link to="/about">About/</router-link>
@@ -8,10 +8,33 @@
       <router-link to="/contact">Contact</router-link>
     </nav>
     <router-view />
+    <footer>
+      <Footer
+        :fonts="fonts"
+        :current-font="currentFont"
+        @updated-font="changeFont"
+      />
+    </footer>
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
+import { ref } from "vue";
+import "./app.css";
+import Footer from "@/components/Footer.vue";
+const fonts = [
+  "SometypeMono",
+  "MonoFaceRegular",
+  "Pixelify_Sans",
+  "Libre_Barcode_39",
+];
+const currentFont = ref(fonts[0]);
+const changeFont = (payload: string) => {
+  currentFont.value = payload;
+};
+</script>
+
+<script lang="ts">
 export default {
   computed: {
     backgroundClass() {
@@ -22,15 +45,6 @@ export default {
 </script>
 
 <style>
-@font-face {
-  font-family: "MonoFaceRegular";
-  src: url("@/assets/DepartureMono-1.346/DepartureMono-Regular.woff2")
-      format("woff2"),
-    url("@/assets/DepartureMono-1.346/DepartureMono-Regular.woff")
-      format("woff"),
-    url("@/assets/DepartureMono-1.346/DepartureMono-Regular.otf")
-      format("opentype");
-}
 html,
 body {
   min-height: 100vh;
@@ -38,7 +52,6 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll if needed */
 }
 #app {
-  font-family: MonoFaceRegular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

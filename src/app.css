@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "MonoFaceRegular";
+  src: url("@/assets/DepartureMono-1.346/DepartureMono-Regular.woff2")
+      format("woff2"),
+    url("@/assets/DepartureMono-1.346/DepartureMono-Regular.woff")
+      format("woff"),
+    url("@/assets/DepartureMono-1.346/DepartureMono-Regular.otf")
+      format("opentype");
+}
+
+@font-face {
+  font-family: "SometypeMono";
+  src: url("@/assets/Sometype_Mono/SometypeMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Pixelify_Sans";
+  src: url("@/assets/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Libre_Barcode_39";
+  src: url("@/assets/Libre_Barcode_39/LibreBarcode39-Regular.ttf");
+}

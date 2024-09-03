@@ -61,6 +61,13 @@ export default defineComponent({
     justify-content: space-evenly;
     overflow: hidden;
   }
+  h2 {
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    max-width: 80vw;
+  }
   .myImage {
     position: absolute;
     margin-bottom: 5vw;
@@ -84,6 +91,13 @@ export default defineComponent({
     flex-direction: row;
     justify-content: space-evenly;
   }
+  h2 {
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    max-width: 80vw;
+  }
   .myImage {
     margin-left: 5vw;
     margin-bottom: 5vw;
@@ -102,12 +116,6 @@ export default defineComponent({
   margin-top: 3%;
   margin-left: 3%;
   line-height: 0.4;
-}
-h2 {
-  text-align: justify;
-  font-size: 18px;
-  color: white;
-  max-width: 80vw;
 }
 h3 {
   color: #888;
