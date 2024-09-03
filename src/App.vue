@@ -19,29 +19,32 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import "./app.css";
 import Footer from "@/components/Footer.vue";
+import { useRoute } from "vue-router";
+const route = useRoute();
+const backgroundClass = computed(() => {
+  return route.meta.backgroundColor || "";
+});
+const currentFont = ref("SometypeMono");
 const fonts = [
   "SometypeMono",
   "MonoFaceRegular",
   "Pixelify_Sans",
   "Libre_Barcode_39",
 ];
-const currentFont = ref(fonts[0]);
 const changeFont = (payload: string) => {
   currentFont.value = payload;
 };
 </script>
 
 <script lang="ts">
-export default {
-  computed: {
-    backgroundClass() {
-      return this.$route.meta.backgroundColor || "";
-    },
-  },
-};
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "AppVue",
+});
 </script>
 
 <style>
