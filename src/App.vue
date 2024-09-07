@@ -27,9 +27,9 @@ const route = useRoute();
 const backgroundClass = computed(() => {
   return route.meta.backgroundColor || "";
 });
-const currentFont = ref("SometypeMono");
+const currentFont = ref("Helvetica");
 const fonts = [
-  "SometypeMono",
+  "Helvetica",
   "MonoFaceRegular",
   "Pixelify_Sans",
   "Libre_Barcode_39",

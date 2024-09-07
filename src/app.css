@@ -21,3 +21,7 @@
   font-family: "Libre_Barcode_39";
   src: url("@/assets/Libre_Barcode_39/LibreBarcode39-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Helvetica";
+}
