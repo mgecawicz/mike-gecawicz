@@ -44,6 +44,7 @@ h3 {
 h1 {
   text-align: left;
   margin-bottom: 0;
+  color: #ffb703;
   margin-left: 2%;
   margin-top: 0;
   font-size: 10vw;

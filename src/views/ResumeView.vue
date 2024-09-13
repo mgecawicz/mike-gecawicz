@@ -109,7 +109,7 @@ export default defineComponent({
     margin-left: 2vw;
   }
   h3 {
-    color: black;
+    color: white;
     text-align: left;
     font-size: 20px;
     margin-left: 2vw;
@@ -144,7 +144,7 @@ export default defineComponent({
     margin-left: 2vw;
   }
   h3 {
-    color: black;
+    color: white;
     text-align: left;
     font-size: 18px;
     margin-left: 2vw;

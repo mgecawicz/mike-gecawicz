@@ -123,6 +123,7 @@ h3 {
   font-size: 2vw;
 }
 h1 {
+  color: #ffb703;
   text-align: right;
   margin-bottom: 0;
   margin-right: 2%;

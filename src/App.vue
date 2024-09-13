@@ -1,5 +1,6 @@
 <template>
-  <div id="app" :class="backgroundClass" :style="{ fontFamily: currentFont }">
+  <div id="app" :style="{ fontFamily: currentFont }">
+    <TreeBackground />
     <nav v-motion-slide-visible-once-right>
       <router-link to="/">~/Home/</router-link>
       <router-link to="/about">About/</router-link>
@@ -41,6 +42,9 @@ const changeFont = (payload: string) => {
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import TreeBackground from "@/components/StarsBackground.vue";
+
+import TreeVue from "./components/Tree.vue";
 
 export default defineComponent({
   name: "AppVue",
@@ -58,7 +62,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #023047;
+  color: #8ecae6;
   height: 100%;
   margin: 0;
   transition: background-color 0.5s ease;

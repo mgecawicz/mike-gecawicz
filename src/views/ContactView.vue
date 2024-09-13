@@ -66,7 +66,7 @@ h3 {
   font-size: 2vw;
 }
 h1 {
-  color: white;
+  color: #2a9d8f;
   text-align: left;
   margin-bottom: 0;
   margin-left: 2%;
