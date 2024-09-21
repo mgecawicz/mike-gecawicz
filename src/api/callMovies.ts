@@ -1,4 +1,11 @@
-export async function getMovies(): Promise<void> {
+export interface Movie {
+  movie_id: { S: string };
+  title: { S: string };
+  genre: { S: string };
+  release_year: { S: string };
+}
+
+export async function getMovies(): Promise<Movie[]> {
   const url =
     "https://ohqm2r8blb.execute-api.us-east-1.amazonaws.com/api/GETMovie"; // Replace with your API endpoint
   try {
@@ -18,10 +25,11 @@ export async function getMovies(): Promise<void> {
     }
 
     const data = await response.json();
-    console.log("Movies retrieved successfully:", data.body);
-    return data.body;
+    console.log("Movies retrieved successfully:", JSON.parse(data.body));
+    return JSON.parse(data.body);
   } catch (error) {
     console.error("Fetch error:", error);
+    return [];
   }
 }
 
@@ -43,7 +51,7 @@ export const postMovie = async (movie: {
         // 'Authorization': 'Bearer ' + token,
         "x-api-key": "c3gv9JfWgDaAWVPYoqHYSakQrTxC49851RFVSnVq",
       },
-      body: JSON.stringify(movie), // Convert movie object to JSON
+      body: JSON.stringify({ movies: [movie] }), // Convert movie object to JSON
     });
 
     if (!response.ok) {

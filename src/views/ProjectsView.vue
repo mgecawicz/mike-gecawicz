@@ -3,13 +3,23 @@
     <div class="title">
       <h1 v-motion-slide-visible-once-left>Projects</h1>
     </div>
-    <div style="margin-top: 20vh">
-      <div>
+    <div style="margin-top: 20vh; text-align: center">
+      <h1 style="font-size: 40px; color: #f9f9f9; text-align: center">
+        Add the movies you want to see in the form at the bottom.
+      </h1>
+      <div style="padding-left: 5vw; padding-right: 5vw">
+        <h2>Movie List</h2>
+        <ul v-if="movies.length">
+          <li v-for="movie in movies" :key="movie.movie_id">
+            <b>{{ format(movie.movie_id) }}</b> ({{
+              format(movie.release_year)
+            }})
+          </li>
+        </ul>
+        <p v-else>No movies found.</p>
         <h2>Add a Movie</h2>
         <form @submit.prevent="addMovie">
-          <input v-model="movie.movie_id" placeholder="Movie ID" required />
-          <input v-model="movie.title" placeholder="Title" required />
-          <input v-model="movie.genre" placeholder="Genre" required />
+          <input v-model="movie.movie_id" placeholder="Title" required />
           <input
             v-model="movie.release_year"
             placeholder="Release Year"
@@ -17,13 +27,6 @@
           />
           <button type="submit">Add Movie</button>
         </form>
-        <h2>Movie List</h2>
-        <ul v-if="movies.length">
-          <li v-for="movie in movies" :key="movie.movie_id">
-            {{ movie.title }} ({{ movie.release_year }})
-          </li>
-        </ul>
-        <p v-else>No movies found.</p>
       </div>
     </div>
   </div>
@@ -31,15 +34,19 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { getMovies, postMovie } from "@/api/callMovies"; // Adjust the path as necessary
+import { Movie, getMovies, postMovie } from "@/api/callMovies"; // Adjust the path as necessary
 
-const movies = ref<any[]>([]);
+const movies = ref<Movie[]>([]);
 const movie = ref({
   movie_id: "",
   title: "",
   genre: "",
   release_year: "",
 });
+
+const format = (data: { S: string }): string => {
+  return data.S;
+};
 
 const addMovie = async () => {
   try {
@@ -107,22 +114,42 @@ button:hover {
 h2 {
   margin-top: 2rem;
   font-size: 1.5rem;
-  color: #333;
+  color: #f9f9f9;
 }
 
+/* Movie list */
 ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove padding */
+  max-width: 600px; /* Set a max width */
+  margin: 0 auto; /* Center the list */
 }
 
+/* Individual movie item */
 li {
-  padding: 0.5rem;
-  border-bottom: 1px solid #ddd;
-  color: #555;
+  background-color: #f9f9f9; /* Light background for each item */
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding for content */
+  margin: 10px 0; /* Space between items */
+  color: black;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-li:last-child {
-  border-bottom: none;
+/* Hover effect */
+li:hover {
+  background-color: #e2e2e2; /* Change background on hover */
+}
+
+/* Movie title and year styling */
+li span.title {
+  font-weight: bold; /* Bold for title */
+  font-size: 1.2em; /* Larger font for title */
+}
+
+li span.year {
+  font-style: italic; /* Italic for the year */
+  color: #555; /* Darker gray for year */
 }
 template {
   background-color: #ffb703;
