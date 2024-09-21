@@ -14,7 +14,6 @@
       </h2>
     </div>
     <div style="margin-top: 20vh; text-align: center">
-      <ColatzConjecture />
       <VirtualCoffee />
       <HowManyWeeks />
       <MovieList />
@@ -27,7 +26,6 @@ import { ref, computed } from "vue";
 import MovieList from "@/projectComps/MovieList.vue";
 import HowManyWeeks from "@/projectComps/HowManyWeeks.vue";
 import VirtualCoffee from "@/projectComps/VirtualCoffee.vue";
-import ColatzConjecture from "@/projectComps/ColatzConjecture.vue";
 </script>
 
 <script lang="ts">

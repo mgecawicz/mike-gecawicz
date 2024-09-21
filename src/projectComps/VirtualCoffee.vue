@@ -9,17 +9,19 @@
         bio-chemical. I am proud to be a co-author on this work.
       </p>
     </div>
-    <VuePdfEmbed annotation-layer text-layer source="virtual-coffee.pdf" />
+    <VuePdfEmbed annotation-layer text-layer :source="doc" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import VuePdfEmbed from "vue-pdf-embed";
-
+import VuePdfEmbed, { useVuePdfEmbed } from "vue-pdf-embed";
 // optional styles
 import "vue-pdf-embed/dist/styles/annotationLayer.css";
 import "vue-pdf-embed/dist/styles/textLayer.css";
+const { doc } = useVuePdfEmbed({
+  source: "virtual-coffee.pdf",
+});
 </script>
 
 <script lang="ts">
