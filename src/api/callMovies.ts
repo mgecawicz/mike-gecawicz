@@ -18,7 +18,8 @@ export async function getMovies(): Promise<void> {
     }
 
     const data = await response.json();
-    console.log("Movies retrieved successfully:", data);
+    console.log("Movies retrieved successfully:", data.body);
+    return data.body;
   } catch (error) {
     console.error("Fetch error:", error);
   }

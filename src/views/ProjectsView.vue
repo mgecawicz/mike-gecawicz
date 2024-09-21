@@ -31,7 +31,7 @@
 <script setup lang="ts"></script>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { getMovies, postMovie } from "@/api/callMovies"; // Adjust the path as necessary
 
 const movies = ref<any[]>([]);
