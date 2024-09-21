@@ -7,7 +7,7 @@ export async function getMovies(): Promise<void> {
       headers: {
         // Uncomment and set the Authorization header if using Cognito or IAM
         // 'Authorization': 'Bearer ' + token,
-        // 'x-api-key': 'your-api-key', // Uncomment if using API keys
+        "x-api-key": "c3gv9JfWgDaAWVPYoqHYSakQrTxC49851RFVSnVq",
       },
     });
 
@@ -40,7 +40,7 @@ export const postMovie = async (movie: {
         "Content-Type": "application/json",
         // Uncomment if using API keys or authorization
         // 'Authorization': 'Bearer ' + token,
-        // 'x-api-key': 'your-api-key',
+        "x-api-key": "c3gv9JfWgDaAWVPYoqHYSakQrTxC49851RFVSnVq",
       },
       body: JSON.stringify(movie), // Convert movie object to JSON
     });
