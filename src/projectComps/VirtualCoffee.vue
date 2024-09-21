@@ -9,19 +9,17 @@
         bio-chemical. I am proud to be a co-author on this work.
       </p>
     </div>
-    <VuePdfEmbed annotation-layer text-layer :source="doc" />
+    <iframe
+      width="100%"
+      height="800"
+      style="border: none"
+      src="virtual-coffee.pdf"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import VuePdfEmbed, { useVuePdfEmbed } from "vue-pdf-embed";
-// optional styles
-import "vue-pdf-embed/dist/styles/annotationLayer.css";
-import "vue-pdf-embed/dist/styles/textLayer.css";
-const { doc } = useVuePdfEmbed({
-  source: "virtual-coffee.pdf",
-});
 </script>
 
 <script lang="ts">
@@ -41,7 +39,7 @@ export default defineComponent({
   margin-right: 5vw;
   margin-left: 5vw;
   overflow-y: scroll !important; /* Enable vertical scrolling */
-  max-height: 80vh;
+  max-height: 150vh;
   color: white; /* Optional: set text color for better contrast */
   padding: 20px; /* Optional: padding */
   padding-bottom: 60px;
