@@ -2,70 +2,32 @@
   <div style="min-height: 100vh">
     <div class="title">
       <h1 v-motion-slide-visible-once-left>Projects</h1>
+      <h2 style="text-align: left; width: 50vw; margin-left: 10vw">
+        Over the past 10 years, I have devoted much of my professional, academic
+        and personal time to the development of projects in a range of
+        diciplines. This spans everthing from front/backend development, video
+        production and 3D Rendering, industrial design, and multi-diciplinary
+        reserach.
+      </h2>
+      <h2 style="text-align: left; width: 50vw; margin-left: 10vw">
+        These are some of those projects.
+      </h2>
     </div>
     <div style="margin-top: 20vh; text-align: center">
-      <h1 style="font-size: 40px; color: #f9f9f9; text-align: center">
-        Add the movies you want to see in the form at the bottom.
-      </h1>
-      <div style="padding-left: 5vw; padding-right: 5vw">
-        <h2>Movie List</h2>
-        <ul v-if="movies.length">
-          <li v-for="movie in movies" :key="movie.movie_id">
-            <b>{{ format(movie.movie_id) }}</b> ({{
-              format(movie.release_year)
-            }})
-          </li>
-        </ul>
-        <p v-else>No movies found.</p>
-        <h2>Add a Movie</h2>
-        <form @submit.prevent="addMovie">
-          <input v-model="movie.movie_id" placeholder="Title" required />
-          <input
-            v-model="movie.release_year"
-            placeholder="Release Year"
-            required
-          />
-          <button type="submit">Add Movie</button>
-        </form>
-      </div>
+      <ColatzConjecture />
+      <VirtualCoffee />
+      <HowManyWeeks />
+      <MovieList />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { Movie, getMovies, postMovie } from "@/api/callMovies"; // Adjust the path as necessary
-
-const movies = ref<Movie[]>([]);
-const movie = ref({
-  movie_id: "",
-  title: "",
-  genre: "",
-  release_year: "",
-});
-
-const format = (data: { S: string }): string => {
-  return data.S;
-};
-
-const addMovie = async () => {
-  try {
-    await postMovie(movie.value);
-    movie.value = { movie_id: "", title: "", genre: "", release_year: "" }; // Reset form
-    await fetchMovies(); // Refresh the movie list
-  } catch (error) {
-    console.error("Error adding movie:", error);
-  }
-};
-
-const fetchMovies = async () => {
-  try {
-    movies.value = await getMovies(); // Call the imported function
-  } catch (error) {
-    console.error("Error fetching movies:", error);
-  }
-};
-fetchMovies();
+import MovieList from "@/projectComps/MovieList.vue";
+import HowManyWeeks from "@/projectComps/HowManyWeeks.vue";
+import VirtualCoffee from "@/projectComps/VirtualCoffee.vue";
+import ColatzConjecture from "@/projectComps/ColatzConjecture.vue";
 </script>
 
 <script lang="ts">
