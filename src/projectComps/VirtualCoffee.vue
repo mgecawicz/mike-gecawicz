@@ -13,7 +13,7 @@
       width="100%"
       height="800"
       style="border: none"
-      src="./virtual-coffee.pdf"
+      src="virtual-coffeeV2.pdf"
     />
   </div>
 </template>
