@@ -9,17 +9,13 @@
         bio-chemical. I am proud to be a co-author on this work.
       </p>
     </div>
-    <iframe
-      width="100%"
-      height="800"
-      style="border: none"
-      src="virtual-coffeeV2.pdf"
-    />
+    <iframe width="100%" height="800" style="border: none" :src="pdfUrl" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+const pdfUrl = "virtual-coffeeV2.pdf";
 </script>
 
 <script lang="ts">
