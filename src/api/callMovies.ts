@@ -1,6 +1,6 @@
 export async function getMovies(): Promise<void> {
   const url =
-    "https://8x32yt4ed6.execute-api.us-east-1.amazonaws.com/prod/getMovies"; // Replace with your API endpoint
+    "https://ohqm2r8blb.execute-api.us-east-1.amazonaws.com/api/GETMovie"; // Replace with your API endpoint
   try {
     const response = await fetch(url, {
       method: "GET",
@@ -31,7 +31,7 @@ export const postMovie = async (movie: {
   release_year: string;
 }): Promise<void> => {
   const url =
-    "https://8x32yt4ed6.execute-api.us-east-1.amazonaws.com/prod/getMovies"; // Replace with your API endpoint
+    "https://ohqm2r8blb.execute-api.us-east-1.amazonaws.com/api/POSTMovie"; // Replace with your API endpoint
 
   try {
     const response = await fetch(url, {
