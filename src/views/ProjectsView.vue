@@ -18,6 +18,8 @@
       <VirtualCoffee />
       <HowManyWeeks />
       <MovieList />
+      <StillImages />
+      <VideoPlayers />
     </div>
   </div>
 </template>
@@ -28,10 +30,14 @@ import WasmTest from "@/projectComps/WasmTest.vue";
 import MovieList from "@/projectComps/MovieList.vue";
 import HowManyWeeks from "@/projectComps/HowManyWeeks.vue";
 import VirtualCoffee from "@/projectComps/VirtualCoffee.vue";
+import StillImages from "@/projectComps/StillImages.vue";
+import VideoPlayers from "@/projectComps/VideoPlayers.vue";
 </script>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import StillImagesVue from "@/projectComps/StillImages.vue";
+import VideoPlayersVue from "@/projectComps/VideoPlayers.vue";
 export default defineComponent({
   name: "ProjectsView",
 });
