@@ -14,6 +14,7 @@
       </h2>
     </div>
     <div style="margin-top: 20vh; text-align: center">
+      <WasmTest />
       <VirtualCoffee />
       <HowManyWeeks />
       <MovieList />
@@ -23,6 +24,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import WasmTest from "@/projectComps/WasmTest.vue";
 import MovieList from "@/projectComps/MovieList.vue";
 import HowManyWeeks from "@/projectComps/HowManyWeeks.vue";
 import VirtualCoffee from "@/projectComps/VirtualCoffee.vue";

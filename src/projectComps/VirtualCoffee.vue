@@ -15,14 +15,11 @@
       height="800"
       allow="autoplay"
     ></iframe>
-    <!-- <PDF :src="pdfUrl" /> -->
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import PDF from "pdf-vue3";
-const pdfUrl = "https://qtxuiy.staticfast.com";
 </script>
 
 <script lang="ts">

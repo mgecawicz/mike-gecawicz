@@ -45,6 +45,7 @@ import { defineComponent } from "vue";
 import TreeBackground from "@/components/StarsBackground.vue";
 
 import TreeVue from "./components/Tree.vue";
+import WasmTestVue from "./projectComps/WasmTest.vue";
 
 export default defineComponent({
   name: "AppVue",
