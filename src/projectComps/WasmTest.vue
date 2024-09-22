@@ -71,7 +71,7 @@ interface WasmExports {
 // Function to load the WASM module
 async function loadWasm() {
   try {
-    const response = await fetch("collatz.wasm"); // Update with the correct path
+    const response = await fetch("https://mkgz.me/collatz.wasm"); // Update with the correct path
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
