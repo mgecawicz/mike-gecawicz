@@ -19,10 +19,10 @@
       <div class="code-container">
         <highlightjs class="code-block" language="c" :code="code" />
       </div>
-      <h3>
+      <p>
         This program is designed to take in a positive integer and run the
         following algorithm:
-      </h3>
+      </p>
       <ul>
         <li>
           If the integer is even, divide it by two, and start algorithm again
@@ -36,7 +36,7 @@
           itterations that takes
         </li>
       </ul>
-      <h3>In the end, it returns the total number of steps to get to 1.</h3>
+      <p>In the end, it returns the total number of steps to get to 1.</p>
     </div>
     <input v-model="inputNumber" type="number" placeholder="Enter a number" />
     <button @click="calculateSteps">Calculate Steps</button>
