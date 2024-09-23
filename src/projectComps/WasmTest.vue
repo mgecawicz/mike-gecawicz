@@ -18,6 +18,10 @@
       </h4>
       <div class="code-container">
         <highlightjs class="code-block" language="c" :code="code" />
+        <h4 style="font-weight: 400; line-height: 1.5">
+          As well as the WAT representation.
+        </h4>
+        <highlightjs class="code-block" language="asm" :code="wasmCode" />
       </div>
       <p>
         This program is designed to take in a positive integer and run the
@@ -51,6 +55,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import code from "raw-loader!../data/wasm.txt";
+import wasmCode from "raw-loader!../data/collatzWAT.txt";
 const inputNumber = ref<number | null>(null);
 const steps = ref<number | null>(null);
 const error = ref<string | null>(null);
@@ -120,6 +125,11 @@ form {
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 2rem;
+}
+
+.code-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .result {

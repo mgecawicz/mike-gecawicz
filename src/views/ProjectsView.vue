@@ -2,16 +2,15 @@
   <div style="min-height: 100vh">
     <div class="title">
       <h1 v-motion-slide-visible-once-left>Projects</h1>
-      <h2 style="text-align: left; width: 50vw; margin-left: 10vw">
+      <h2 class="subtext">
         Over the past 10 years, I have devoted much of my professional, academic
         and personal time to the development of projects in a range of
-        diciplines. This spans everthing from front/backend development, video
+        diciplines.
+        <br /><br />This spans everthing from front/backend development, video
         production and 3D Rendering, industrial design, and multi-diciplinary
         reserach.
       </h2>
-      <h2 style="text-align: left; width: 50vw; margin-left: 10vw">
-        These are some of those projects.
-      </h2>
+      <h2 class="subtext">These are some of those projects.</h2>
     </div>
     <div style="margin-top: 20vh; text-align: center">
       <WasmTest />
@@ -19,13 +18,14 @@
       <HowManyWeeks />
       <MovieList />
       <StillImages />
-      <VideoPlayers />
+      <VideoPlayers v-if="!isMobile()" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { isMobile } from "../common/common";
 import WasmTest from "@/projectComps/WasmTest.vue";
 import MovieList from "@/projectComps/MovieList.vue";
 import HowManyWeeks from "@/projectComps/HowManyWeeks.vue";
@@ -49,6 +49,23 @@ form {
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* mobile */
+  .subtext {
+    text-align: left;
+    margin-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* desktop */
+  .subtext {
+    text-align: left;
+    width: 50vw;
+    margin-left: 10vw;
+  }
 }
 
 input {
@@ -77,12 +94,6 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
-
-h2 {
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  color: #f9f9f9;
 }
 
 /* Movie list */

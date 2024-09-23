@@ -1,0 +1,42 @@
+(module
+  (type (;0;) (func))
+  (type (;1;) (func (param i32) (result i32)))
+  (func (;0;) (type 0))
+  (func (;1;) (type 1) (param i32) (result i32)
+    (local i32)
+    local.get 0
+    i32.const 1
+    i32.ne
+    if ;; label = @1
+      loop ;; label = @2
+        local.get 1
+        i32.const 1
+        i32.add
+        local.set 1
+        local.get 0
+        i32.const 3
+        i32.mul
+        i32.const 1
+        i32.add
+        local.get 0
+        i32.const 1
+        i32.shr_s
+        local.get 0
+        i32.const 1
+        i32.and
+        select
+        local.tee 0
+        i32.const 1
+        i32.ne
+        br_if 0 (;@2;)
+      end
+    end
+    local.get 1
+  )
+  (table (;0;) 1 1 funcref)
+  (memory (;0;) 258 258)
+  (export "a" (memory 0))
+  (export "b" (func 0))
+  (export "c" (func 1))
+  (export "d" (table 0))
+)

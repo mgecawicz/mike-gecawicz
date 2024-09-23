@@ -1,5 +1,6 @@
 <template>
   <div style="text-align: center">
+    <h2>Blender Design</h2>
     <VueFlux
       :options="vfOptions"
       :rscs="vfRscs"
@@ -96,8 +97,9 @@ export default defineComponent({
   margin-bottom: 5vw;
 }
 h2 {
-  margin-top: 2rem;
+  margin-top: 5vw;
   font-size: 3rem !important;
-  color: #fb8500;
+  color: #ffffff;
+  margin-left: 5vw;
 }
 </style>
