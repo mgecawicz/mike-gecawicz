@@ -19,7 +19,9 @@
         ><h3>A* Maze on GitHub 🔗</h3></a
       >
     </div>
-    <img src="../images/AStarMaze.png" width="50%" />
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <img src="../images/AStarMaze.png" style="width: 50%" />
+    </div>
   </div>
 </template>
 
