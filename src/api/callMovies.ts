@@ -6,7 +6,6 @@ export interface Movie {
 }
 
 export async function getMovies(): Promise<Movie[]> {
-  console.log(process.env);
   const url =
     "https://ohqm2r8blb.execute-api.us-east-1.amazonaws.com/api/GETMovie"; // Replace with your API endpoint
   try {
