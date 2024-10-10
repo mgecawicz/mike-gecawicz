@@ -18,6 +18,8 @@ export async function getMovies(): Promise<Movie[]> {
       },
     });
 
+    console.log(process.env);
+
     if (!response.ok) {
       const error = await response.json();
       console.error("Error retrieving movies:", error);
