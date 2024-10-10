@@ -1,5 +1,6 @@
 <template>
   <div class="bg" style="text-align: center">
+    <a id="wasm" />
     <div style="display: flex; flex-direction: column; align-items: center">
       <h2>Collatz Conjecture Calculator</h2>
       <h3 style="color: #fb8500; font-size: 30px; margin-top: -5vh">

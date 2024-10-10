@@ -1,5 +1,6 @@
 <template>
   <div class="bg">
+    <a id="coffee" />
     <div style="display: flex; flex-direction: column; align-items: center">
       <h2>Influence of Electric Taste</h2>
       <p style="width: 80vw; text-align: center; margin-bottom: 4vw">

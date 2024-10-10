@@ -1,5 +1,6 @@
 <template>
   <div style="text-align: center">
+    <a id="stills" />
     <h2>Blender Design</h2>
     <VueFlux
       :options="vfOptions"

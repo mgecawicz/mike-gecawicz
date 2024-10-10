@@ -1,4 +1,5 @@
 <template>
+  <a id="animation" />
   <h2>3D Animation</h2>
   <div style="display: flex; justify-content: center">
     <video-player

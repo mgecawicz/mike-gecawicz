@@ -12,8 +12,10 @@
       </h2>
       <h2 class="subtext">These are some of those projects.</h2>
     </div>
+    <Contents />
     <div style="margin-top: 20vh; text-align: center">
       <WasmTest />
+      <AStarMaze />
       <VirtualCoffee />
       <HowManyWeeks />
       <MovieList />
@@ -26,12 +28,14 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import { isMobile } from "../common/common";
+import Contents from "@/projectComps/Contents.vue";
 import WasmTest from "@/projectComps/WasmTest.vue";
 import MovieList from "@/projectComps/MovieList.vue";
 import HowManyWeeks from "@/projectComps/HowManyWeeks.vue";
 import VirtualCoffee from "@/projectComps/VirtualCoffee.vue";
 import StillImages from "@/projectComps/StillImages.vue";
 import VideoPlayers from "@/projectComps/VideoPlayers.vue";
+import AStarMaze from "@/projectComps/AStarMaze.vue";
 </script>
 
 <script lang="ts">

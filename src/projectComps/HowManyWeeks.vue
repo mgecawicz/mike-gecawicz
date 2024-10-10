@@ -1,5 +1,6 @@
 <template>
   <div class="bg">
+    <a id="weeks" />
     <div style="display: flex; flex-direction: column; align-items: center">
       <h2>How Many Weeks</h2>
       <p style="width: 80vw; text-align: center">

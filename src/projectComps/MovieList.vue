@@ -1,6 +1,6 @@
 <template>
   <div class="bg" style="text-align: center">
-    <a id="999999" />
+    <a id="movie-list" />
     <div style="display: flex; flex-direction: column; align-items: center">
       <h2>Movie Watch List</h2>
       <p style="width: 80vw; text-align: center">
