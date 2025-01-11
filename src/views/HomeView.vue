@@ -8,7 +8,7 @@
   </div>
   <div class="tagLine" v-motion-slide-visible-once-bottom>
     <h2>Software Developer & Digital Content Designer</h2>
-    <h3>Based in Jersey City, NJ</h3>
+    <h3>Based in Raleigh, NC</h3>
   </div>
   <div class="mainContent">
     <div class="column1">
