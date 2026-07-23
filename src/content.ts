@@ -1,6 +1,6 @@
 export const site = {
   name: "Mike Gecawicz",
-  role: "Software Engineer & Creative Technologist",
+  role: "Agentic Engineer & Creative Technologist",
   location: "Cary, NC",
   metaDescription:
     "Mike Gecawicz, software engineer & creative technologist in Cary, NC.",
@@ -92,9 +92,18 @@ export const jobs: Job[] = [
     ],
   },
   {
+    company: "D3 Technical Partners",
+    role: "Software Development & Integration Consultant / Manager",
+    span: "2013 – Now",
+    where: "",
+    notes: [
+      "Ongoing consulting for Trident's partner company: software development, systems integration, and helping projects get from plan to shipped.",
+    ],
+  },
+  {
     company: "Trident Communication Technology",
     role: "Mechanical Designer",
-    span: "2013 – 2021",
+    span: "2013 – Now",
     where: "Acton, MA",
     notes: [
       "Designed prototype concepts for headsets and communication badges, plus the logo the company later trademarked.",

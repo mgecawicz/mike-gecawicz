@@ -17,7 +17,8 @@ export function Experience() {
             <div className="xp-main">
               <h3 className="xp-company">{job.company}</h3>
               <p className="xp-role">
-                {job.role} <span className="xp-where">· {job.where}</span>
+                {job.role}
+                {job.where && <span className="xp-where"> · {job.where}</span>}
               </p>
               {job.notes.map((n, j) => (
                 <p className="xp-note" key={j}>
