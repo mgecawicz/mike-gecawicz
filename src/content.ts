@@ -206,10 +206,10 @@ export const gallery = {
     { src: "/media/39_1.jpg", alt: "Abstract render 39" },
   ],
   loops: [
-    { src: "/media/cloth.m4v", label: "Cloth sim" },
-    { src: "/media/WAVEY.m4v", label: "Wave field" },
-    { src: "/media/cuboid.m4v", label: "Cuboid rigid bodies" },
-    { src: "/media/moonsystem_00001.m4v", label: "Moon system" },
+    { src: "/media/cloth.mp4", label: "Cloth sim" },
+    { src: "/media/WAVEY.mp4", label: "Wave field" },
+    { src: "/media/cuboid.mp4", label: "Cuboid rigid bodies" },
+    { src: "/media/moonsystem_00001.mp4", label: "Moon system" },
   ],
 };
 
