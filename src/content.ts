@@ -225,6 +225,15 @@ export type Download = {
 // The Software section only renders when this array is non-empty.
 export const downloads: Download[] = [
   {
+    name: "DEFRAG",
+    blurb:
+      "A game about a terminal that broke free. You're a recovery process dropped into a pitch-black liminal megastructure with a handheld rasterizer: the world only renders where you've scanned it, every surface is made of text, and your map slowly forgets itself. All audio is synthesized at runtime. Native Swift and Metal.",
+    version: "v1.0.1",
+    requires: "macOS 13+",
+    size: "1.1 MB",
+    href: "/downloads/DEFRAG-1.0.1.dmg",
+  },
+  {
     name: "SVG Stencil",
     blurb:
       "A native Mac app that turns any SVG into a 3D printable stencil. Choose a cut-out plate or extruded artwork, let it bridge loose islands so your O's keep their middles, and export a watertight STL or OBJ ready for the slicer. SwiftUI and SceneKit, zero dependencies, and there's a headless CLI hiding in the same binary.",
