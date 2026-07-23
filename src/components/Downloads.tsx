@@ -11,7 +11,7 @@ export function Downloads() {
       <SectionHeading
         index={index}
         title="Software"
-        note="Native apps, hosted right here. No store in between. These builds aren't notarized yet, so on first launch macOS will ask you to allow them under Privacy & Security."
+        note="Native Mac apps, signed and notarized, hosted right here. No store in between."
       />
       <ul className="dl-list">
         {downloads.map((d, i) => (
