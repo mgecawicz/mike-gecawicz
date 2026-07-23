@@ -3,18 +3,16 @@ export const site = {
   role: "Software Engineer & Creative Technologist",
   location: "Cary, NC",
   metaDescription:
-    "Mike Gecawicz — software engineer & creative technologist in Cary, NC.",
+    "Mike Gecawicz, software engineer & creative technologist in Cary, NC.",
   coords: "35.7915° N / 78.7811° W",
   email: "mike@mkgz.me",
-  tagline:
-    "I build systems that work and interfaces that feel — from ad-decisioning backends to GPU particle fields.",
 };
 
 export const about = {
   intro: [
-    "I'm an engineer who never picked a lane. My degree says New Media and Computer Science; my career says backend services, native apps, embedded hardware, and a US patent for simulating flavor. I think that range is the point.",
-    "By day I lead software engineering — architecting and shipping production systems on AWS. By night I render physics simulations in Blender, write C that compiles to a 115-byte WASM binary, and teach triangles to flock.",
-    "I care about the space where engineering rigor meets play: tools that are correct and fast, and interfaces that make you want to touch them.",
+    "I studied New Media and Computer Science at the University of Maine, which turned out to be a great excuse to never pick a lane. Since school I've built backend services for TV advertising, shipped an iOS app with a startup I co-founded, and spent two years in a research lab that ended with my name on a patent application for a device that simulates flavor. I'm still not entirely sure how that last one happened.",
+    "These days I lead an engineering team and spend most of my working hours somewhere in AWS. Nights are for Blender physics sims, tiny WebAssembly experiments, and whatever algorithm is currently stuck in my head.",
+    "Mostly I just like making things that work well and are fun to touch. This site is my attempt at doing both at once.",
   ],
   currently: [
     { label: "Role", value: "Director of Software Engineering" },
@@ -41,45 +39,45 @@ export const jobs: Job[] = [
     span: "Now",
     where: "Cary, NC",
     notes: [
-      "Leading engineering on an AI-powered commercial-intelligence platform for pharma and life sciences — owning architecture, delivery, and the growth of the team.",
+      "I run engineering for a commercial intelligence platform built for pharma and life sciences teams. Architecture, delivery, hiring, and a lot of learning on the job.",
     ],
   },
   {
     company: "INVIDI Technologies",
     role: "Software Developer",
-    span: "2021 — 2025",
+    span: "2021 – 2025",
     where: "Princeton, NJ",
     notes: [
-      "Built and ran backend + frontend services for targeted ad-decisioning across live and streamed TV — systems where milliseconds and correctness both pay the bills.",
+      "Built and ran services for targeted ad decisioning on live and streamed TV. The kind of system where milliseconds and correctness both matter.",
     ],
   },
   {
     company: "Bridge Networking",
     role: "CTO / Co-founder",
-    span: "2020 — 2021",
+    span: "2020 – 2021",
     where: "San Diego, CA",
     notes: [
-      "Co-founded a social startup; architected a React Native iOS app and led the web/native development team.",
+      "Co-founded a small social startup. Designed the React Native iOS app and led our dev team through launch.",
     ],
   },
   {
     company: "MIM Laboratories",
     role: "Product Designer / Electrical Engineer",
-    span: "2019 — 2021",
+    span: "2019 – 2021",
     where: "University of Maine",
     notes: [
-      "Built research prototypes for sensory technology: application-specific microcontrollers, 3D CAD, SLA print pipelines — hardware that lets you taste a virtual coffee.",
+      "Built research prototypes for sensory technology: application-specific microcontrollers, 3D CAD, and SLA print pipelines. In short, hardware that lets you taste a virtual coffee.",
     ],
     artifacts: [
       {
         label: "US Patent App 63/056,202",
         detail:
-          "Methods and Systems for Augmenting and/or Stimulating Flavor — co-creator",
+          "Methods and Systems for Augmenting and/or Stimulating Flavor (co-creator)",
       },
       {
-        label: "ICMI '20 — published",
+        label: "ICMI '20, published",
         detail:
-          "Influence of Electric Taste, Smell, Color, and Thermal Sensory Modalities on Virtual Flavor Perception — co-author",
+          "Influence of Electric Taste, Smell, Color, and Thermal Sensory Modalities on Virtual Flavor Perception (co-author)",
         href: "https://dl.acm.org/doi/10.1145/3382507.3418862",
       },
     ],
@@ -87,19 +85,19 @@ export const jobs: Job[] = [
   {
     company: "ASAP Media Services",
     role: "Project Manager / UX / Developer",
-    span: "2018 — 2019",
+    span: "2018 – 2019",
     where: "University of Maine",
     notes: [
-      "Led research and client projects: mobile apps, VR, physical computing, and an NSF-funded climate-visualization platform (iSWOOP).",
+      "Led research and client projects: mobile apps, VR, physical computing, and an NSF-funded climate visualization platform called iSWOOP.",
     ],
   },
   {
     company: "Trident Communication Technology",
     role: "Mechanical Designer",
-    span: "2013 — 2021",
+    span: "2013 – 2021",
     where: "Acton, MA",
     notes: [
-      "Designed prototype concepts for audio hardware — headsets and communication badges — and the company's trademarked logo.",
+      "Designed prototype concepts for headsets and communication badges, plus the logo the company later trademarked.",
     ],
   },
 ];
@@ -128,7 +126,7 @@ export const projects: Project[] = [
     title: "Virtual Flavor Device",
     kind: "Research / Hardware",
     blurb:
-      "A device that simulates the flavor of food and drink by layering electric taste, smell, color, and thermal stimuli over plain water. Provisional patent filed; the study was published at ICMI '20 and has been cited 20+ times.",
+      "A device that simulates the flavor of food and drink by layering electric taste, smell, color, and thermal stimuli over plain water. We filed a provisional patent, and the study behind it was published at ICMI '20.",
     href: "https://dl.acm.org/doi/10.1145/3382507.3418862",
     tags: ["Patent", "ICMI 2020", "Embedded"],
   },
@@ -136,7 +134,7 @@ export const projects: Project[] = [
     title: "SilverBuddy",
     kind: "Serverless / IaC",
     blurb:
-      "A silver spot-price and bullion inventory tracker: Lambda, API Gateway, DynamoDB, S3, and CloudWatch — every resource declared in Terraform.",
+      "A silver spot price and bullion inventory tracker running on Lambda, API Gateway, DynamoDB, S3, and CloudWatch, with every resource declared in Terraform.",
     href: "https://github.com/mgecawicz/silver-buddy",
     tags: ["AWS", "Terraform", "2025"],
   },
@@ -144,7 +142,7 @@ export const projects: Project[] = [
     title: "UNO R4 2-Digit Display",
     kind: "Open Source / C++",
     blurb:
-      "An Arduino library that draws 2-digit numbers on the UNO R4's LED matrix — small, documented, and running in other people's projects.",
+      "An Arduino library that draws 2-digit numbers on the UNO R4's LED matrix. Small, documented, and running in other people's projects, which is the part I like.",
     href: "https://github.com/mgecawicz/Arduino_Uno_R4_2_Digit_Display",
     tags: ["Arduino", "Library", "C++"],
   },
@@ -168,7 +166,7 @@ export const projects: Project[] = [
     title: "3D Game of Life",
     kind: "Creative Coding",
     blurb:
-      "Conway's Game of Life lifted into three dimensions with Processing — emergence you can orbit around.",
+      "Conway's Game of Life lifted into three dimensions with Processing. Emergence you can orbit around.",
     href: "https://github.com/mgecawicz/3DConwaysGameOfLife",
     tags: ["Processing", "Cellular Automata"],
   },
@@ -176,7 +174,7 @@ export const projects: Project[] = [
     title: "Bridge Network",
     kind: "iOS / React Native",
     blurb:
-      "One profile for all your socials, shared by link or QR — shipped to the App Store in 2020 as CTO/co-founder, incubated at SDSU's ZIP Launchpad.",
+      "One profile for all your socials, shared by link or QR code. We shipped it to the App Store in 2020 and grew it through SDSU's ZIP Launchpad.",
     href: "https://thedailyaztec.com/105353/news/sdsu-students-create-new-app-to-bridge-others-with-networking-opportunities/",
     tags: ["React Native", "CTO", "Startup"],
   },
@@ -193,13 +191,13 @@ export const projects: Project[] = [
 export const gallery = {
   stills: [
     { src: "/media/CITY.jpg", alt: "Procedural city render" },
-    { src: "/media/REACH.jpg", alt: "Reach — 3D render" },
+    { src: "/media/REACH.jpg", alt: "Reach, 3D render" },
     { src: "/media/skull2.jpg", alt: "Skull study render" },
-    { src: "/media/tubes.jpg", alt: "Tubes — geometry study" },
+    { src: "/media/tubes.jpg", alt: "Tubes, a geometry study" },
     { src: "/media/dropFinal.jpg", alt: "Fluid drop simulation" },
     { src: "/media/geoWalker.jpg", alt: "Geometric walker" },
     { src: "/media/house2-copy.jpg", alt: "Architectural render" },
-    { src: "/media/catch.jpg", alt: "Catch — render" },
+    { src: "/media/catch.jpg", alt: "Catch, render" },
     { src: "/media/kayboard.jpg", alt: "Keyboard render" },
     { src: "/media/64_1.jpg", alt: "Abstract render 64" },
     { src: "/media/23_1.jpg", alt: "Abstract render 23" },
@@ -212,6 +210,37 @@ export const gallery = {
     { src: "/media/moonsystem_00001.mp4", label: "Moon system" },
   ],
 };
+
+export type Download = {
+  name: string;
+  blurb: string;
+  version: string;
+  requires: string;
+  size: string;
+  /** file lives in public/downloads/ */
+  href: string;
+};
+
+// Drop .dmg files into public/downloads/ and list them here.
+// The Software section only renders when this array is non-empty.
+export const downloads: Download[] = [
+  {
+    name: "SVG Stencil",
+    blurb:
+      "A native Mac app that turns any SVG into a 3D printable stencil. Choose a cut-out plate or extruded artwork, let it bridge loose islands so your O's keep their middles, and export a watertight STL or OBJ ready for the slicer. SwiftUI and SceneKit, zero dependencies, and there's a headless CLI hiding in the same binary.",
+    version: "v1.0",
+    requires: "macOS 13+",
+    size: "772 KB",
+    href: "/downloads/SVG-Stencil.dmg",
+  },
+];
+
+export const network = [
+  { label: "blog.mkgz.me", href: "https://blog.mkgz.me" },
+  { label: "any.mkgz.me", href: "https://any.mkgz.me" },
+  { label: "go.mkgz.me", href: "https://go.mkgz.me" },
+  { label: "drop.mkgz.me", href: "https://drop.mkgz.me" },
+];
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/mgecawicz" },
@@ -231,5 +260,8 @@ export const sections = [
   { id: "experience", index: "02", label: "Experience" },
   { id: "lab", index: "03", label: "Lab" },
   { id: "work", index: "04", label: "Work" },
-  { id: "contact", index: "05", label: "Contact" },
+  ...(downloads.length > 0
+    ? [{ id: "software", index: "05", label: "Software" }]
+    : []),
+  { id: "contact", index: downloads.length > 0 ? "06" : "05", label: "Contact" },
 ];

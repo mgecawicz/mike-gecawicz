@@ -54,7 +54,7 @@ export function Experience() {
           {education.map((e) => (
             <p key={e.school}>
               <span className="xp-edu-school">{e.school}</span>
-              <span className="xp-edu-detail"> — {e.detail}</span>
+              <span className="xp-edu-detail"> · {e.detail}</span>
             </p>
           ))}
         </div>

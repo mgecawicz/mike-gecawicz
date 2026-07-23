@@ -3,19 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Mike Gecawicz — software engineer & creative technologist in Cary, NC. Systems, simulation, and generative design." />
+    <title>Mike Gecawicz — Software Engineer</title>
+    <meta name="description" content="Mike Gecawicz is a software engineer and creative technologist in Cary, NC. Director of Software Engineering at AmbientSkye. Systems, simulation, WebAssembly, and generative design." />
+    <meta name="author" content="Mike Gecawicz" />
     <meta name="theme-color" content="#0a0a0e" />
-    <meta property="og:title" content="Mike Gecawicz" />
-    <meta property="og:description" content="Software engineer & creative technologist. Systems, simulation, and generative design." />
+    <link rel="canonical" href="https://mkgz.me/" />
+
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mkgz.me/" />
+    <meta property="og:site_name" content="Mike Gecawicz" />
+    <meta property="og:title" content="Mike Gecawicz — Software Engineer" />
+    <meta property="og:description" content="Software engineer and creative technologist in Cary, NC. Systems, simulation, WebAssembly, and generative design." />
+    <meta property="og:image" content="https://mkgz.me/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A procedural city rendered in Blender by Mike Gecawicz" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mike Gecawicz — Software Engineer" />
+    <meta name="twitter:description" content="Software engineer and creative technologist in Cary, NC. Systems, simulation, WebAssembly, and generative design." />
+    <meta name="twitter:image" content="https://mkgz.me/og.jpg" />
+
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0e'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='14' font-weight='700' fill='%23ffb703' text-anchor='middle'%3EMG%3C/text%3E%3C/svg%3E" />
     <link rel="preload" href="/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/DepartureMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
-    <title>Mike Gecawicz — Software Engineer</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mike Gecawicz",
+      "alternateName": "Michael Gecawicz",
+      "url": "https://mkgz.me",
+      "email": "mailto:mike@mkgz.me",
+      "image": "https://mkgz.me/media/me.jpg",
+      "jobTitle": "Director of Software Engineering",
+      "worksFor": { "@type": "Organization", "name": "AmbientSkye" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cary",
+        "addressRegion": "NC",
+        "addressCountry": "US"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Maine"
+      },
+      "knowsAbout": ["Software Engineering", "AWS", "WebAssembly", "React", "Blender", "3D Printing", "Embedded Systems"],
+      "sameAs": [
+        "https://github.com/mgecawicz",
+        "https://www.linkedin.com/in/michael-gecawicz-39a14490",
+        "https://www.youtube.com/c/MikeGecawicz",
+        "https://www.printables.com/@MichaelGecaw_1054361",
+        "https://www.instagram.com/mgswich/",
+        "https://www.tiktok.com/@the_mgec",
+        "https://blog.mkgz.me"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main style="font-family: system-ui, sans-serif; max-width: 640px; margin: 3rem auto; padding: 0 1rem;">
+        <h1>Mike Gecawicz</h1>
+        <p>Software engineer and creative technologist in Cary, NC. Director of
+        Software Engineering at AmbientSkye. Previously INVIDI Technologies,
+        Bridge Networking (CTO/co-founder), and MIM Laboratories at the
+        University of Maine, where I co-authored an ICMI '20 paper and a patent
+        application on virtual flavor simulation.</p>
+        <p>This site is interactive and needs JavaScript for the good parts:
+        a GPU particle field, live WebAssembly and flocking demos, and an A*
+        maze solver.</p>
+        <p>Email: <a href="mailto:mike@mkgz.me">mike@mkgz.me</a> ·
+        GitHub: <a href="https://github.com/mgecawicz">mgecawicz</a> ·
+        Blog: <a href="https://blog.mkgz.me">blog.mkgz.me</a></p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

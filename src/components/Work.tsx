@@ -66,7 +66,7 @@ export function Work() {
       <SectionHeading
         index="04"
         title="Selected Work"
-        note="Patents, packages, prints, and products — a decade of shipping in every direction."
+        note="Some things I've shipped over the last decade, in every direction I could find."
       />
 
       <ul className="project-grid">

@@ -100,7 +100,7 @@ export function Hero() {
           <span>GECAWICZ</span>
         </div>
       )}
-      <h1 className="sr-only">{site.name} — {site.role}</h1>
+      <h1 className="sr-only">{site.name}, {site.role}</h1>
 
       <div className="hero-meta">
         <Reveal delay={400} from="fade">
@@ -112,7 +112,7 @@ export function Hero() {
         </Reveal>
         <Reveal delay={520} from="fade">
           <p className="hero-hint mono-label">
-            move · click · scroll — <kbd>⌘K</kbd> for commands
+            move · click · scroll · <kbd>⌘K</kbd> for commands
           </p>
         </Reveal>
       </div>

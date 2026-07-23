@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { sections, socials, site } from "../content";
+import { sections, socials, network, site } from "../content";
 
 type Command = {
   id: string;
@@ -37,7 +37,7 @@ export function CommandPalette() {
           ?.scrollIntoView({ behavior: "smooth", block: "start" });
       },
     }));
-    const links = socials.map((s) => ({
+    const links = [...socials, ...network].map((s) => ({
       id: `link-${s.label}`,
       label: `Open ${s.label}`,
       hint: "↗",
@@ -47,7 +47,7 @@ export function CommandPalette() {
       ...nav,
       {
         id: "copy-email",
-        label: `Copy email — ${site.email}`,
+        label: `Copy email (${site.email})`,
         hint: "⧉",
         run: () => {
           navigator.clipboard?.writeText(site.email);
@@ -152,7 +152,7 @@ export function CommandPalette() {
         </div>
         <ul className="palette-list">
           {filtered.length === 0 && (
-            <li className="palette-empty">no match — try “crt”</li>
+            <li className="palette-empty">no match. try “crt”</li>
           )}
           {filtered.map((c, i) => (
             <li key={c.id}>

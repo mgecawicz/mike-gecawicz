@@ -9,6 +9,7 @@ import { About } from "./components/About";
 import { Experience } from "./components/Experience";
 import { Lab } from "./components/Lab";
 import { Work } from "./components/Work";
+import { Downloads } from "./components/Downloads";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
@@ -59,6 +60,7 @@ export default function App() {
         <Experience />
         <Lab />
         <Work />
+        <Downloads />
         <Contact />
       </main>
       <Footer />
