@@ -1,0 +1,108 @@
+.intro {
+  display: flex;
+  justify-content: right;
+}
+.name {
+  line-height: 0.8;
+}
+.tagLine {
+  margin-top: 3%;
+  margin-left: 3%;
+  line-height: 0.4;
+}
+h2 {
+  text-align: left;
+  font-size: 2vw;
+}
+hr {
+  border-color: black;
+}
+h3 {
+  color: #888;
+  text-align: left;
+  font-size: 2vw;
+}
+.blogDate {
+  font-weight: 1000;
+  font-size: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  /* mobile */
+  h1 {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 2%;
+    margin-top: 5%;
+    font-size: 10vw;
+  }
+  .dummy {
+    text-align: right;
+    margin-right: 1vw;
+    color: white;
+    font-size: 15px;
+  }
+  .code-block {
+    background: "red";
+    text-align: left;
+  }
+  .mainContent {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .code-container {
+    overflow: hidden; /* Clip content of child */
+  }
+  .blogContent {
+    text-align: left;
+    white-space: pre-line;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dummy {
+    text-align: right;
+    margin-right: 1vw;
+    color: white;
+    font-size: 1vw;
+  }
+  h1 {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 2%;
+    margin-top: 0;
+    font-size: 10vw;
+  }
+  .mainContent {
+    display: flex;
+    justify-content: space-around;
+  }
+  .column1 {
+    width: 50vw;
+    padding-top: 4vw;
+  }
+  .column2 {
+    width: 40vw;
+  }
+  .code-block {
+    width: 40vw;
+    padding-left: 20px !important;
+    background: "red";
+    text-align: left;
+  }
+  .blogContent {
+    text-align: left;
+    white-space: pre-line;
+  }
+  .code-container {
+    display: flex;
+    overflow: hidden; /* Clip content of child */
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 1vw;
+    font-size: 22;
+  }
+}

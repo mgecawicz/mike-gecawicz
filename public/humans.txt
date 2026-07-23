@@ -1,0 +1,11 @@
+/* TEAM */
+Engineer, designer, particle wrangler: Mike Gecawicz
+Location: Cary, NC
+Contact: mike@mkgz.me
+
+/* SITE */
+Stack: React 19, Vite, TypeScript
+Animation libraries: none
+Particles in the hero: ~42,000, simulated on your GPU
+Smallest file doing real work: /collatz.wasm (115 bytes)
+Try: Cmd+K, the Konami code, clicking the hero
