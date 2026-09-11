@@ -10,7 +10,7 @@ export const site = {
 
 export const about = {
   intro: [
-    "I studied New Media and Computer Science at the University of Maine, which turned out to be a great excuse to never pick a lane. Since school I've built backend services for TV advertising, shipped an iOS app with a startup I co-founded, and spent two years in a research lab that ended with my name on a patent application for a device that simulates flavor. I'm still not entirely sure how that last one happened.",
+    "I studied New Media and Computer Science at the University of Maine. Since then I've built backend services for TV advertising, co-founded a startup and shipped its iOS app, and spent two years in a research lab working on a device that simulates flavor. I'm a named inventor on the patent application that came out of that work.",
     "These days I lead an engineering team and spend most of my working hours somewhere in AWS. Nights are for Blender physics sims, tiny WebAssembly experiments, and whatever algorithm is currently stuck in my head.",
     "Mostly I just like making things that work well and are fun to touch. This site is my attempt at doing both at once.",
   ],
