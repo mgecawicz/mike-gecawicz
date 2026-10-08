@@ -253,6 +253,12 @@ export const downloads: Download[] = [
   },
 ];
 
+export const company = {
+  name: "MKGZ LLC",
+  blurb: "A North Carolina software company. Maker of",
+  product: { label: "Card Coach", href: "https://mgecawicz.github.io/cardcoach/" },
+};
+
 export const network = [
   { label: "blog.mkgz.me", href: "https://blog.mkgz.me" },
   { label: "any.mkgz.me", href: "https://any.mkgz.me" },

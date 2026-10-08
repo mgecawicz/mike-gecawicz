@@ -737,6 +737,10 @@
 .footer-colophon {
   line-height: 1.9;
 }
+.footer-company {
+  margin-top: 6px;
+  color: var(--dim);
+}
 .footer-net {
   margin-top: 14px;
   display: flex;

@@ -1,11 +1,17 @@
-import { network } from "../content";
+import { company, network } from "../content";
 
 export function Footer() {
   return (
     <footer className="footer">
       <div className="footer-grid">
         <div>
-          <p className="mono-label">© {new Date().getFullYear()} MIKE GECAWICZ</p>
+          <p className="mono-label">© {new Date().getFullYear()} {company.name}</p>
+          <p className="mono-label footer-company">
+            {company.blurb}{" "}
+            <a className="footer-net-link" href={company.product.href} target="_blank" rel="noreferrer" data-cursor="link">
+              {company.product.label} ↗
+            </a>
+          </p>
           <ul className="footer-net">
             <li className="mono-label footer-net-head">ELSEWHERE ON MKGZ.ME</li>
             {network.map((n) => (
