@@ -12,6 +12,11 @@ export function Footer() {
               {company.product.label} ↗
             </a>
           </p>
+          <p className="mono-label footer-company">
+            <a className="footer-net-link" href="/pay" data-cursor="link">
+              Pay for a consultation →
+            </a>
+          </p>
           <ul className="footer-net">
             <li className="mono-label footer-net-head">ELSEWHERE ON MKGZ.ME</li>
             {network.map((n) => (
