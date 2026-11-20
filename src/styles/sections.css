@@ -769,3 +769,116 @@
   opacity: 1;
   color: var(--accent);
 }
+
+/* ---------------------------------------------------------------- pay */
+.pay {
+  max-width: 760px;
+  min-height: 70vh;
+  padding-top: clamp(48px, 9vh, 110px);
+}
+.pay-back {
+  display: inline-block;
+  margin-bottom: clamp(36px, 6vh, 64px);
+  transition: color 0.2s;
+}
+.pay-back:hover {
+  color: var(--accent);
+}
+.pay-rule {
+  border: 0;
+  border-top: 1px solid var(--line-strong);
+  margin-top: 26px;
+}
+.pay-lede {
+  max-width: 52ch;
+  color: var(--dim);
+}
+.pay-amount {
+  margin-top: 22px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.pay-change {
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.pay-change:hover {
+  color: var(--accent);
+}
+.pay-amount-form {
+  margin-top: 34px;
+}
+.pay-amount-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+.pay-amount-field {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex: 1 1 220px;
+  max-width: 320px;
+  padding: 10px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3.4vw, 2rem);
+  color: var(--dim);
+  transition: border-color 0.2s;
+}
+.pay-amount-field:focus-within {
+  border-color: var(--accent);
+}
+.pay-amount-field input {
+  width: 100%;
+  min-width: 0;
+  color: var(--ink);
+  outline: none;
+}
+.pay-continue {
+  padding: 0 22px;
+  min-height: 52px;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+  transition: filter 0.2s;
+}
+.pay-continue:hover,
+.pay-continue:focus-visible {
+  filter: brightness(1.12);
+}
+.pay-hint {
+  margin-top: 12px;
+}
+.pay-hint.is-invalid {
+  color: #ff6b6b;
+}
+.pay-form {
+  margin-top: 34px;
+}
+.pay-status {
+  margin-top: 34px;
+  line-height: 1.9;
+}
+.pay-status a {
+  color: var(--accent);
+}
+.pay-result {
+  margin-top: 6px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3.4vw, 2.2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}

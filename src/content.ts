@@ -259,6 +259,19 @@ export const company = {
   product: { label: "Card Coach", href: "https://mgecawicz.github.io/cardcoach/" },
 };
 
+export const pay = {
+  // Publishable key: public by design. The secret key lives only in the Lambda.
+  publishableKey:
+    "pk_live_51UduMKQLQu5aoI8FU024ErLfhaLBav83XqGJjMYVcJhZVyBhWBj3Eg8R4DFa5qK9PsjGtEJmjQyLl9CkYMCdPdp30046b5rma1",
+  // Amplify proxies this path to the Lambda in lambda/pay.
+  api: "/api/pay",
+  // Dollars. The Lambda enforces the same bounds; keep them in sync.
+  minAmount: 50,
+  maxAmount: 5000,
+  title: "Consultation",
+  lede: "Pay for a consultation with MKGZ LLC. Card details go straight to Stripe and never touch this site.",
+};
+
 export const network = [
   { label: "blog.mkgz.me", href: "https://blog.mkgz.me" },
   { label: "any.mkgz.me", href: "https://any.mkgz.me" },
